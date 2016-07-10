@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		042FFDA614FC23CE263F0429 /* Pods_Practica05.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FDE8DB6B50DA324E05B872A /* Pods_Practica05.framework */; };
 		AAF8951A1D3310F300E9FE87 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF895191D3310F300E9FE87 /* main.m */; };
 		AAF8951D1D3310F300E9FE87 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF8951C1D3310F300E9FE87 /* AppDelegate.m */; };
 		AAF895201D3310F300E9FE87 /* Home.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF8951F1D3310F300E9FE87 /* Home.m */; };
@@ -55,6 +56,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1FDE8DB6B50DA324E05B872A /* Pods_Practica05.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Practica05.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		46150024961149BB740F0E2B /* Pods-Practica05.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Practica05.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Practica05/Pods-Practica05.debug.xcconfig"; sourceTree = "<group>"; };
+		8579FFCF7254F99EEF961A7D /* Pods-Practica05.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Practica05.release.xcconfig"; path = "Pods/Target Support Files/Pods-Practica05/Pods-Practica05.release.xcconfig"; sourceTree = "<group>"; };
 		AAF895151D3310F200E9FE87 /* Practica05.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Practica05.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAF895191D3310F300E9FE87 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AAF8951B1D3310F300E9FE87 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -116,17 +120,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				042FFDA614FC23CE263F0429 /* Pods_Practica05.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		45373154003B0BDA8208878F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1FDE8DB6B50DA324E05B872A /* Pods_Practica05.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		80C700F7868BFE50A6A4E678 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				46150024961149BB740F0E2B /* Pods-Practica05.debug.xcconfig */,
+				8579FFCF7254F99EEF961A7D /* Pods-Practica05.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		AAF8950C1D3310F200E9FE87 = {
 			isa = PBXGroup;
 			children = (
 				AAF895171D3310F300E9FE87 /* Practica05 */,
 				AAF895161D3310F200E9FE87 /* Products */,
+				80C700F7868BFE50A6A4E678 /* Pods */,
+				45373154003B0BDA8208878F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -253,9 +277,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AAF8952F1D3310F300E9FE87 /* Build configuration list for PBXNativeTarget "Practica05" */;
 			buildPhases = (
+				8D9BF6707834D30F228BD612 /* [CP] Check Pods Manifest.lock */,
 				AAF895111D3310F200E9FE87 /* Sources */,
 				AAF895121D3310F200E9FE87 /* Frameworks */,
 				AAF895131D3310F200E9FE87 /* Resources */,
+				AA583AA7444BBF15E3F2A4FD /* [CP] Embed Pods Frameworks */,
+				BE5340B9DC0DDE96ACAC81CC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -343,6 +370,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8D9BF6707834D30F228BD612 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AA583AA7444BBF15E3F2A4FD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Practica05/Pods-Practica05-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE5340B9DC0DDE96ACAC81CC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Practica05/Pods-Practica05-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AAF895111D3310F200E9FE87 /* Sources */ = {
@@ -467,6 +542,7 @@
 		};
 		AAF895301D3310F300E9FE87 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46150024961149BB740F0E2B /* Pods-Practica05.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Practica05/Info.plist;
@@ -478,6 +554,7 @@
 		};
 		AAF895311D3310F300E9FE87 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8579FFCF7254F99EEF961A7D /* Pods-Practica05.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Practica05/Info.plist;
@@ -506,6 +583,7 @@
 				AAF895311D3310F300E9FE87 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
