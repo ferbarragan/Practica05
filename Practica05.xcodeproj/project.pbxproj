@@ -53,6 +53,8 @@
 		AAF895831D33155F00E9FE87 /* Municipios.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF895821D33155F00E9FE87 /* Municipios.m */; };
 		AAF895851D3315AF00E9FE87 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AAF895841D3315AF00E9FE87 /* GoogleService-Info.plist */; };
 		AAF895871D33161C00E9FE87 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = AAF895861D33161C00E9FE87 /* Podfile */; };
+		AAF895891D33F10300E9FE87 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AAF895881D33F10200E9FE87 /* libz.tbd */; };
+		AAF8958B1D33F11100E9FE87 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AAF8958A1D33F11100E9FE87 /* libstdc++.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -112,7 +114,9 @@
 		AAF895811D33155F00E9FE87 /* Municipios.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Municipios.h; sourceTree = "<group>"; };
 		AAF895821D33155F00E9FE87 /* Municipios.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Municipios.m; sourceTree = "<group>"; };
 		AAF895841D3315AF00E9FE87 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		AAF895861D33161C00E9FE87 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
+		AAF895861D33161C00E9FE87 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AAF895881D33F10200E9FE87 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		AAF8958A1D33F11100E9FE87 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +124,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAF8958B1D33F11100E9FE87 /* libstdc++.tbd in Frameworks */,
+				AAF895891D33F10300E9FE87 /* libz.tbd in Frameworks */,
 				042FFDA614FC23CE263F0429 /* Pods_Practica05.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -130,6 +136,8 @@
 		45373154003B0BDA8208878F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AAF8958A1D33F11100E9FE87 /* libstdc++.tbd */,
+				AAF895881D33F10200E9FE87 /* libz.tbd */,
 				1FDE8DB6B50DA324E05B872A /* Pods_Practica05.framework */,
 			);
 			name = Frameworks;
@@ -304,6 +312,7 @@
 				TargetAttributes = {
 					AAF895141D3310F200E9FE87 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = QXF33N93KH;
 					};
 				};
 			};
@@ -545,10 +554,13 @@
 			baseConfigurationReference = 46150024961149BB740F0E2B /* Pods-Practica05.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				INFOPLIST_FILE = Practica05/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.barragan.Practica05;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "905ed9b9-f58e-4376-9e36-356b4abfdca5";
 			};
 			name = Debug;
 		};
@@ -557,10 +569,13 @@
 			baseConfigurationReference = 8579FFCF7254F99EEF961A7D /* Pods-Practica05.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				INFOPLIST_FILE = Practica05/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.barragan.Practica05;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "905ed9b9-f58e-4376-9e36-356b4abfdca5";
 			};
 			name = Release;
 		};

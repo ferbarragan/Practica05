@@ -4,4 +4,5 @@ use_frameworks!
 target 'Practica05' do
 pod 'GoogleMaps'
 pod 'Google/Analytics'
+pod 'Pushwoosh'
 end

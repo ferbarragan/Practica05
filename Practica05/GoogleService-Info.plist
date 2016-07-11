@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>TRACKING_ID</key>
-	<string>UA-80271547-2</string>
+	<string>UA-80271547-3</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.barragan.Practica04</string>
+	<string>com.barragan.Practica05</string>
 	<key>PROJECT_ID</key>
-	<string>practica04-1361</string>
+	<string>practica05-1369</string>
 	<key>IS_ADS_ENABLED</key>
 	<false/>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -21,6 +21,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<false/>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:876056607939:ios:5936ffcc3e883932</string>
+	<string>1:705603356460:ios:40855947466d5cc1</string>
 </dict>
 </plist>
