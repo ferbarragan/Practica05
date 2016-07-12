@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface Login : UIViewController
+- (IBAction)btnLogout:(UIButton *)sender;
 
 @end

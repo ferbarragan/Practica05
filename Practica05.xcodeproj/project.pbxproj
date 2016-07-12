@@ -13,6 +13,7 @@
 		AAD9CB5E1D3461FC0044DAF4 /* DigitsKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AAD9CB5A1D3461FC0044DAF4 /* DigitsKitResources.bundle */; };
 		AAD9CB5F1D3461FC0044DAF4 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAD9CB5B1D3461FC0044DAF4 /* TwitterCore.framework */; };
 		AAD9CB621D34650B0044DAF4 /* Login.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD9CB611D34650B0044DAF4 /* Login.m */; };
+		AAD9CB641D3484350044DAF4 /* login.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AAD9CB631D3484350044DAF4 /* login.jpg */; };
 		AAF8951A1D3310F300E9FE87 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF895191D3310F300E9FE87 /* main.m */; };
 		AAF8951D1D3310F300E9FE87 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF8951C1D3310F300E9FE87 /* AppDelegate.m */; };
 		AAF895201D3310F300E9FE87 /* Home.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF8951F1D3310F300E9FE87 /* Home.m */; };
@@ -72,6 +73,7 @@
 		AAD9CB5B1D3461FC0044DAF4 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
 		AAD9CB601D34650B0044DAF4 /* Login.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Login.h; sourceTree = "<group>"; };
 		AAD9CB611D34650B0044DAF4 /* Login.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Login.m; sourceTree = "<group>"; };
+		AAD9CB631D3484350044DAF4 /* login.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = login.jpg; path = imgs/login.jpg; sourceTree = "<group>"; };
 		AAF895151D3310F200E9FE87 /* Practica05.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Practica05.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAF895191D3310F300E9FE87 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AAF8951B1D3310F300E9FE87 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -254,6 +256,7 @@
 		AAF895351D33150000E9FE87 /* imgs */ = {
 			isa = PBXGroup;
 			children = (
+				AAD9CB631D3484350044DAF4 /* login.jpg */,
 				AAF8953C1D33153200E9FE87 /* chiapas_comitlan.jpg */,
 				AAF8953D1D33153200E9FE87 /* chiapas_main.jpg */,
 				AAF8953E1D33153200E9FE87 /* chiapas_palenque.jpg */,
@@ -385,6 +388,7 @@
 				AAF895701D33153200E9FE87 /* sonora_main.jpg in Resources */,
 				AAF8955C1D33153200E9FE87 /* chiapas_palenque.jpg in Resources */,
 				AAF895751D33153200E9FE87 /* yucatan_santaElena.jpg in Resources */,
+				AAD9CB641D3484350044DAF4 /* login.jpg in Resources */,
 				AAF895621D33153200E9FE87 /* edoMexico_main.jpg in Resources */,
 				AAF895731D33153200E9FE87 /* yucatan_merida.jpg in Resources */,
 				AAF895661D33153200E9FE87 /* jalisco_guadalajara.jpg in Resources */,
