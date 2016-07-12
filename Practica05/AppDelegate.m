@@ -13,8 +13,12 @@
 @import SystemConfiguration;
 @import AVFoundation;
 @import ImageIO;
-
+/* Pushwoosh */
 #import <Pushwoosh/PushNotificationManager.h>
+/* Digits */
+#import <Fabric/Fabric.h>
+#import <DigitsKit/DigitsKit.h>
+
 
 @interface AppDelegate ()
 
@@ -51,6 +55,10 @@
     
     // register for push notifications!
     [[PushNotificationManager pushManager] registerForPushNotifications];
+    
+    /* Digits */
+    [Fabric with:@[[Digits class]]];
+
 
     return YES;
 }

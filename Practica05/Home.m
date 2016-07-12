@@ -8,6 +8,7 @@
 
 #import "Home.h"
 #import <Google/Analytics.h>
+#import <DigitsKit/DigitsKit.h>
 
 @interface Home ()
 

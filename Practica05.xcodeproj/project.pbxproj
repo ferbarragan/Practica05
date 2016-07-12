@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		042FFDA614FC23CE263F0429 /* Pods_Practica05.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FDE8DB6B50DA324E05B872A /* Pods_Practica05.framework */; };
+		AAD9CB5C1D3461FC0044DAF4 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAD9CB581D3461FC0044DAF4 /* Fabric.framework */; };
+		AAD9CB5D1D3461FC0044DAF4 /* DigitsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAD9CB591D3461FC0044DAF4 /* DigitsKit.framework */; };
+		AAD9CB5E1D3461FC0044DAF4 /* DigitsKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AAD9CB5A1D3461FC0044DAF4 /* DigitsKitResources.bundle */; };
+		AAD9CB5F1D3461FC0044DAF4 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAD9CB5B1D3461FC0044DAF4 /* TwitterCore.framework */; };
+		AAD9CB621D34650B0044DAF4 /* Login.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD9CB611D34650B0044DAF4 /* Login.m */; };
 		AAF8951A1D3310F300E9FE87 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF895191D3310F300E9FE87 /* main.m */; };
 		AAF8951D1D3310F300E9FE87 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF8951C1D3310F300E9FE87 /* AppDelegate.m */; };
 		AAF895201D3310F300E9FE87 /* Home.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF8951F1D3310F300E9FE87 /* Home.m */; };
@@ -61,6 +66,12 @@
 		1FDE8DB6B50DA324E05B872A /* Pods_Practica05.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Practica05.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		46150024961149BB740F0E2B /* Pods-Practica05.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Practica05.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Practica05/Pods-Practica05.debug.xcconfig"; sourceTree = "<group>"; };
 		8579FFCF7254F99EEF961A7D /* Pods-Practica05.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Practica05.release.xcconfig"; path = "Pods/Target Support Files/Pods-Practica05/Pods-Practica05.release.xcconfig"; sourceTree = "<group>"; };
+		AAD9CB581D3461FC0044DAF4 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		AAD9CB591D3461FC0044DAF4 /* DigitsKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DigitsKit.framework; sourceTree = "<group>"; };
+		AAD9CB5A1D3461FC0044DAF4 /* DigitsKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = DigitsKitResources.bundle; path = DigitsKit.framework/Versions/A/Resources/DigitsKitResources.bundle; sourceTree = "<group>"; };
+		AAD9CB5B1D3461FC0044DAF4 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
+		AAD9CB601D34650B0044DAF4 /* Login.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Login.h; sourceTree = "<group>"; };
+		AAD9CB611D34650B0044DAF4 /* Login.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Login.m; sourceTree = "<group>"; };
 		AAF895151D3310F200E9FE87 /* Practica05.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Practica05.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAF895191D3310F300E9FE87 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AAF8951B1D3310F300E9FE87 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -125,8 +136,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAF8958B1D33F11100E9FE87 /* libstdc++.tbd in Frameworks */,
+				AAD9CB5F1D3461FC0044DAF4 /* TwitterCore.framework in Frameworks */,
 				AAF895891D33F10300E9FE87 /* libz.tbd in Frameworks */,
 				042FFDA614FC23CE263F0429 /* Pods_Practica05.framework in Frameworks */,
+				AAD9CB5C1D3461FC0044DAF4 /* Fabric.framework in Frameworks */,
+				AAD9CB5D1D3461FC0044DAF4 /* DigitsKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,6 +169,10 @@
 		AAF8950C1D3310F200E9FE87 = {
 			isa = PBXGroup;
 			children = (
+				AAD9CB581D3461FC0044DAF4 /* Fabric.framework */,
+				AAD9CB591D3461FC0044DAF4 /* DigitsKit.framework */,
+				AAD9CB5A1D3461FC0044DAF4 /* DigitsKitResources.bundle */,
+				AAD9CB5B1D3461FC0044DAF4 /* TwitterCore.framework */,
 				AAF895171D3310F300E9FE87 /* Practica05 */,
 				AAF895161D3310F200E9FE87 /* Products */,
 				80C700F7868BFE50A6A4E678 /* Pods */,
@@ -209,6 +227,8 @@
 				AAF8957E1D33155500E9FE87 /* GMapLocation.m */,
 				AAF8951E1D3310F300E9FE87 /* Home.h */,
 				AAF8951F1D3310F300E9FE87 /* Home.m */,
+				AAD9CB601D34650B0044DAF4 /* Login.h */,
+				AAD9CB611D34650B0044DAF4 /* Login.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -291,6 +311,7 @@
 				AAF895131D3310F200E9FE87 /* Resources */,
 				AA583AA7444BBF15E3F2A4FD /* [CP] Embed Pods Frameworks */,
 				BE5340B9DC0DDE96ACAC81CC /* [CP] Copy Pods Resources */,
+				AAD9CB571D3461670044DAF4 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -353,6 +374,7 @@
 				AAF8955F1D33153200E9FE87 /* chiapas_tuxtla.jpg in Resources */,
 				AAF895681D33153200E9FE87 /* jalisco_mascota.jpg in Resources */,
 				AAF8955B1D33153200E9FE87 /* chiapas_main.jpg in Resources */,
+				AAD9CB5E1D3461FC0044DAF4 /* DigitsKitResources.bundle in Resources */,
 				AAF895711D33153200E9FE87 /* sonora_peñasco.jpg in Resources */,
 				AAF8953B1D33152300E9FE87 /* cellHome.xib in Resources */,
 				AAF895721D33153200E9FE87 /* yucatan_main.jpg in Resources */,
@@ -411,6 +433,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Practica05/Pods-Practica05-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		AAD9CB571D3461670044DAF4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 4d8ff1006c2eb6a23e66fcd507c49740da177699 1e3917a49b8ea8af0a97490d45ea0d332a984942bdd5742ad8ac119ae2b60b8c";
+		};
 		BE5340B9DC0DDE96ACAC81CC /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -438,6 +473,7 @@
 				AAF8957A1D33153E00E9FE87 /* Declarations.m in Sources */,
 				AAF895831D33155F00E9FE87 /* Municipios.m in Sources */,
 				AAF8957F1D33155500E9FE87 /* Description.m in Sources */,
+				AAD9CB621D34650B0044DAF4 /* Login.m in Sources */,
 				AAF8951A1D3310F300E9FE87 /* main.m in Sources */,
 				AAF8953A1D33152300E9FE87 /* cellHome.m in Sources */,
 				AAF895261D3310F300E9FE87 /* Practica05.xcdatamodeld in Sources */,
@@ -556,6 +592,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Practica05/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.barragan.Practica05;
@@ -571,6 +611,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Practica05/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.barragan.Practica05;
