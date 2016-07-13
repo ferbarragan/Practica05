@@ -172,21 +172,34 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="vBP-ie-pMv" userLabel="btnLogout">
-                                <rect key="frame" x="54" y="436" width="213" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="SRO-5B-ain" userLabel="btnLogin">
+                                <rect key="frame" x="54" y="383" width="213" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Comenzar">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnLoginPressed:" destination="q8o-Rn-PQS" eventType="touchUpInside" id="5nI-FY-ASv"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="vBP-ie-pMv" userLabel="btnLogout">
+                                <rect key="frame" x="54" y="496" width="213" height="30"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Logout">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="btnLogout:" destination="q8o-Rn-PQS" eventType="touchUpInside" id="3wb-mp-p6a"/>
+                                    <action selector="btnLogoutPressed:" destination="q8o-Rn-PQS" eventType="touchUpInside" id="8oT-PN-31H"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="btnLogin" destination="SRO-5B-ain" id="Sib-8g-UiX"/>
+                        <outlet property="btnLogout" destination="vBP-ie-pMv" id="c6Y-xq-Yvs"/>
                         <segue destination="cln-vB-In0" kind="modal" identifier="LoginToHome" id="6If-nI-D9t"/>
                     </connections>
                 </viewController>

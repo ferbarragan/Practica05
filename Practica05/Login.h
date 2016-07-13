@@ -9,6 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface Login : UIViewController
-- (IBAction)btnLogout:(UIButton *)sender;
+
+- (IBAction)btnLoginPressed:(UIButton *)sender;
+- (IBAction)btnLogoutPressed:(UIButton *)sender;
+
+@property (strong, nonatomic) IBOutlet UIButton *btnLogin;
+@property (strong, nonatomic) IBOutlet UIButton *btnLogout;
 
 @end
